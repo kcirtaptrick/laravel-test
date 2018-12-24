@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('u/{username}', function ($username) {
+   return view('u')->with(); 
+});
